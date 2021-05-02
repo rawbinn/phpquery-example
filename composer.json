@@ -1,0 +1,20 @@
+{
+    "name": "rawbinn/phpquery-example",
+    "description": "Data crawling using phpQuery",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rawbinn Shrestha",
+            "email": "contact@rawbinn.com"
+        }
+    ],
+    "require": {
+        "electrolinux/phpquery": "^0.9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rawbinn\\Crawl\\": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}

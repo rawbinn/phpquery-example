@@ -1,0 +1,11 @@
+/vendor
+/.idea
+.DS_Store
+Thumbs.db
+/.vscode
+*.sublime-project
+*.sublime-workspace
+.project
+_ide_helper.php
+.phpstorm.meta.php
+.php_cs.cache
