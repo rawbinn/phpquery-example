@@ -50,7 +50,6 @@ class Crawl
                 $response = $this->httpGet($uri);
                 $output = $this->getFormattedData($response);
                 $this->storeAsCsv($output, 'members_info');
-                // $this->storeAsCsv($response, 'members_info');
                 echo '.';
             }
             echo "\n".round((($key + 1) / $totalAreaOfPracticeId) * 100)."%\n";
@@ -148,7 +147,7 @@ class Crawl
     public function storeAsCsv($data, $filename)
     {
         if (!file_exists('storage')) {
-            mkdir('storage');
+            mkdir('storage', 0777, true);
         }
         $filename = 'storage/'.$filename.'.csv';
         if (file_exists($filename)) {
@@ -156,7 +155,6 @@ class Crawl
         } else {
             $file = fopen($filename, 'w');
         }
-        // fwrite($file, $data);
         foreach ($data as $memberInfo) {
             fputcsv($file, $memberInfo);
         }

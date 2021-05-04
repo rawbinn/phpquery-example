@@ -18,3 +18,5 @@ List of information gathered from otaus.coma.au in csv
 ***Note:***
 Run via CLI
 
+csv file is stored in storage folder
+
