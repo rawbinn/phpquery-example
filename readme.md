@@ -20,5 +20,5 @@ Run via CLI
 
 csv file is stored in storage folder
 
-![alt text](https://raw.githubusercontent.com/rawbinn/phpquery-example/master/storage/cli.png)
+![runnig via cli](https://raw.githubusercontent.com/rawbinn/phpquery-example/master/storage/cli.png)
 
