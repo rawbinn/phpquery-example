@@ -1,3 +1,4 @@
+## phpQuery Example
 List of Occupational Therapists from otaus.com.au
 It uses phpQuery https://code.google.com/archive/p/phpquery for server-side css3 selector.
 List of information gathered from otaus.coma.au in csv
@@ -18,7 +19,16 @@ List of information gathered from otaus.coma.au in csv
 ***Note:***
 Run via CLI
 
-csv file is stored in storage folder
-
 ![runnig via cli](https://raw.githubusercontent.com/rawbinn/phpquery-example/master/storage/cli.png)
+
+## Thankyou
+phpQuery is originally by Tobiasz Cudnik:
+http://code.google.com/p/phpquery/
+
+and thankyou
+https://github.com/electrolinux
+for making available in packagist
+
+## License
+This is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
