@@ -149,11 +149,14 @@ class Crawl
         if (!file_exists('storage')) {
             mkdir('storage', 0777, true);
         }
+
         $filename = 'storage/'.$filename.'.csv';
         if (file_exists($filename)) {
             $file = fopen($filename, 'a');
         } else {
             $file = fopen($filename, 'w');
+            $headers = ['PracticeName', 'ContactName', 'AddressStreet', 'AddressCity', 'AddressState', 'AddressPostCode', 'AddressCountry', 'Phone', 'FundingScheme', 'AreasOfPractice'];
+            fputcsv($file, $headers);
         }
         foreach ($data as $memberInfo) {
             fputcsv($file, $memberInfo);
